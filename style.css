@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Commissioner', sans-serif;
+
+}
+body{
+    background: rgb(247, 245, 245);
+    height: 190vh;
+}
+:root{
+    --Moderatecyan: hsl(176, 50%, 47%);
+    --Darkcyan: hsl(176, 72%, 28%);
+    --Black: hsl(0, 0%, 0%);
+    --Darkgray: hsl(0, 0%, 48%);
+}
+.upper{
+    display: flex;
+    background-image: url(./images/image-hero-desktop.jpg);
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    overflow: visible;
+}
+.upper >img{
+    width: 23px;
+    height: 23px;
+    display: none;
+}
+p{
+    color: white;
+    padding: 5px 20px;
+    font-size: 17px;
+    position: absolute;
+    left: 0;
+    margin-top: 40px;
+    padding-left: 6.5rem;
+
+}
+.nav{
+    margin-top: 40px;
+    position: absolute;
+    right: 0;
+    display: inline;
+    margin-right: 10rem;
+}
+.nav > ul > li{
+    list-style-type: none;
+    display: inline;
+}
+.nav > ul > li >a {
+    text-decoration: none;
+    color: white;
+    padding: 18px;
+}
+.nav > ul > li >a:hover{  
+    color: white;
+}
+.middle{
+    top: -50px;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 33%;
+    border-radius: 5px;
+    height: 25vh;
+    background: white;
+}
+.middle img{
+    top:-35px;
+    position: relative;
+    margin-left: 14.5rem;
+
+}
+.middle h1{
+    font-size: 18px;
+    text-align: center;
+}
+.middle p{
+    color: var(--Darkgray);
+    font-size: 11px;
+    margin-top: 1.2rem;
+    /* margin-bottom: 1.3rem; */
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+.middle button{
+    position: absolute;
+    background: var(--Moderatecyan);
+    height: 35px;
+    color: white;
+    border: none;
+    width: 30%;
+    border-radius: 30px;
+    bottom: 0;
+    margin-left:25px;
+    margin-bottom: 20px;
+}
+.middle > .bookmark img{
+    height: 45px ;
+    top: 7.6rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    margin-right: 8.5rem;
+
+}
+.middle label{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 29%;
+    text-align: center;
+    padding-top: 14px;
+    height: 45px;
+    margin-right: 25px;
+    background: rgb(236, 236, 236);
+    color: var(--Darkgray);
+    margin-bottom: 19px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.lower{
+    position: relative;
+    top: 28rem;
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0 33%;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    height: 17vh;
+    display: flex;
+    justify-content: space-evenly;
+    background: white;
+}
+h2, h3 , h4{
+    border-right: 1px solid var(--Darkgray);
+    width: 27%;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+h4{
+    border-right: none;
+  }
+.one, .two , .three{
+    font-size: 10px;
+    color: var(--Darkgray);
+  }
+.progress-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 86%;
+  height: 9px;
+  background-color:rgb(236, 236, 236);
+  margin-bottom: 5%;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-left: 5%;
+}
+
+.progress-bar {
+  height: 9px;
+  background-color: var(--Moderatecyan);
+  width: 80%;
+  border-radius: 6px;
+}
+
+.next{
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0 33%;
+    background: white;
+    top: 37rem;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+
+}
+.next h1{
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+.next p{
+    color: var(--Darkgray);
+    font-size: .71rem;
+    width: 90%;
+    padding: 0; 
+    padding-left: 21px; 
+
+    margin: 20px auto;
+
+}
+.hold{
+    margin-top: 5rem;
+    color: var(--Darkgray);
+}
+.bamboo{
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0 6%;
+    background: white;
+    top: 12rem;
+    height: 22vh;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    border: 1px solid rgb(227, 222, 222);
+
+}
+.bamboo button{
+    font-size: 10px;
+    position: absolute;
+    background: var(--Moderatecyan);
+    height: 30px;
+    color: white;
+    border: none;
+    width: 25%;
+    border-radius: 30px;
+    bottom: 0;
+    right: 0;
+    margin-left:25px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+
+}
+.bamboo h2{
+    position: absolute;
+    font-size: 16px;
+    bottom: 0;
+    border: none;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.bamboo p{
+    font-size: 11.5px;
+    line-height: 18px;
+    width: 96%;
+}
+.bamboo label{
+    font-size: 12px;
+    position: absolute;
+    color: var(--Moderatecyan);
+    right: 0;
+    margin-right: 27px;
+    top: 1.8rem;
+
+}
+.remainder{
+    font-size: 10px;
+    color: var(--Darkgray);
+    text-align: center;
+    display:inline-block;
+    margin-left:6px;
+}
+.edition{
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0 6%;
+    background: white;
+    top: 23rem;
+    height: 22vh;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    border: 1px solid rgb(227, 222, 222);
+
+}
+.edition button{
+    font-size: 10px;
+    position: absolute;
+    background: var(--Moderatecyan);
+    height: 30px;
+    color: white;
+    border: none;
+    width: 25%;
+    border-radius: 30px;
+    bottom: 0;
+    right: 0;
+    margin-left:25px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+
+}
+.edition h2{
+    position: absolute;
+    font-size: 16px;
+    bottom: 0;
+    border: none;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.edition p{
+    font-size: 11.5px;
+    line-height: 18px;
+    width: 96%;
+}
+.edition label{
+    font-size: 12px;
+    position: absolute;
+    color: var(--Moderatecyan);
+    right: 0;
+    margin-right: 27px;
+    top: 1.8rem;
+
+}
+.mahogany{
+    opacity: 0.4;
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0 6%;
+    background: white;
+    top: 34rem;
+    height: 22vh;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    border: 1px solid rgb(227, 222, 222);
+
+}
+.mahogany> h1, .bamboo>h1 ,.edition>h1{
+    font-size: 12px;
+}
+
+.continue{
+    font-size: 10px;
+    color: var(--Darkgray);
+    text-align: center;
+    display:inline-block;
+    margin-left:6px;
+}
+.mahogany button{
+    font-size: 10px;
+    position: absolute;
+    background: var(--Darkgray);
+    height: 30px;
+    color: white;
+    border: none;
+    width: 25%;
+    border-radius: 30px;
+    bottom: 0;
+    right: 0;
+    margin-left:25px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+
+}
+.mahogany h2{
+    position: absolute;
+    font-size: 16px;
+    bottom: 0;
+    border: none;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.mahogany p{
+    font-size: 11.5px;
+    line-height: 18px;
+    width: 96%;
+}
+.mahogany label{
+    font-size: 12px;
+    position: absolute;
+    color: var(--Moderatecyan);
+    right: 0;
+    margin-right: 27px;
+    top: 1.8rem;
+
+}
+.end{
+    font-size: 10px;
+    color: var(--Darkgray);
+    text-align: center;
+    display:inline-block;
+    margin-left:6px;
+}
+
+
+
+
+@media (max-width: 480px)
+{
+    .upper img{
+        position: absolute;
+        display: block;
+        right: 0;    
+        margin-top: 12%;
+        margin-right: 35px;
+    }
+
+    .upper{
+        position: relative;
+    }
+
+    .nav{
+        display: none;
+        position: absolute;
+        top: 4rem;
+        background: white;
+        width: 60%;
+        border-radius:  .5rem;
+        /* padding: 1.5rem; */
+        left: 3.5rem;
+        z-index: 100;
+    }
+    p{
+        margin-left: 80px;
+    }
+    .nav > ul > li{
+        padding-bottom: 10px;
+        display: block;
+        margin: 1rem 0 0 0;
+        border-bottom: .1rem solid var(--Darkgray);
+    }
+    .nav > ul > li >a {
+        color: black;
+    }
+    .nav > ul > li:last-child{
+        border-bottom: none;
+    }
+    
+    
+
+}
